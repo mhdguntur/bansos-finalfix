@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url(./asset/Logo.png);
+  background-size: cover;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  background-color: #39E54E;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  color: white;
+  overflow: hidden;
+}
+
+.sidebar__head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebar__picture {
+  width: 60px;
+  height: 60px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.sidebar__menu-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__menu,
+.sidebar__menu-last {
+  list-style: none;
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-item,
+.menu-item__last {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item::before,
+.menu-item__last::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main-content {
+  margin-left: 300px;
+  height: 100vh;
+  display: flex;
+}
+
+.main-content__heading {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  color: darkslategray;
+}
+
+.main-content__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 60px;
+}
+
+.main-content__input-head,
+.main-content__input-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.input-form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-button {
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-button:hover {
+  transition: .5s all ease;
+  background-color: white;
+  color: darkslategray;
+}
+
+input,
+select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.content-data {
+  margin-left: 300px;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 20px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+}

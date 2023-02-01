@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('/img/asset/Logo.png');
+  background-size: cover;
+}
+
+img {
+  width: 100px;
+}
+
+.navbar,
+.search-info {
+  width: 900px;
+  margin: auto;
+}
+
+.navbar-section {
+  background-color: #39E54E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.menu-item {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .5s all ease;
+}
+
+.menu-item:hover {
+  color: #9CFF2F;
+}
+
+.search-info {
+  display: flex;
+  margin: auto;
+  height: 80vh;
+}
+
+.search-info__input {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 150px;
+}
+
+.search-info__title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: darkslategray;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.button-search {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 60px;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.button-search:hover {
+  transition: .5s all ease;
+  background-color: white;
+  color: darkslategray;
+}
